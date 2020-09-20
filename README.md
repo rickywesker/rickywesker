@@ -1,4 +1,8 @@
-### Hi there 👋
+Hi there 👋
+I am an undergraduate DS student currently @Peking Univ. Digging stuff in GAN.
+Love playing video games like Souls series, but recently imersed with the world of Disco Elysium.🤔
+Feel free to contact me if u have any funny ideas of... Everything!👯🔭
+[![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=rickywesker&count_private=true&show_icons=true&theme=buefy)](https://github.com/anuraghazra/github-readme-stats)
 
 <!--
 **rickywesker/rickywesker** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
