@@ -5,7 +5,6 @@ Feel free to contact me if u have any funny ideas of... Everything!👯
 
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=rickywesker&count_private=true&show_icons=true&theme=buefy" alt="stats_rickywesker">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=rickywesker&layout=compact" alt="langs_rickywesker">
 </div>
 
 <!--
