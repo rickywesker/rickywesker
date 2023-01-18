@@ -4,7 +4,7 @@ Love playing video games like Souls series, but recently imersed with the world 
 Feel free to contact me if u have any funny ideas of... Everything!👯
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=rickywesker&count_private=true&show_icons=true&theme=buefy" alt="stats_rickywesker">
+  <img src="https://readme-stats.clckblog.space/api?username=rickywesker&count_private=true&show_icons=true&theme=buefy" alt="stats_rickywesker">
 </div>
 
 <!--
