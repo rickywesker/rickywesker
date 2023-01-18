@@ -1,5 +1,5 @@
 Hi there 👋
-I am an undergraduate DS student currently @Peking Univ. Digging stuff in GAN.
+I am a Data Science graduate previously @Peking Univ. Digging stuff in GAN.
 Love playing video games like Souls series, but recently imersed with the world of Disco Elysium.🤔
 Feel free to contact me if u have any funny ideas of... Everything!👯
 
