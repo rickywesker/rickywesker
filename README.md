@@ -1,7 +1,8 @@
 Hi there 👋
 I am a Data Science graduate previously @Peking Univ. Digging stuff in GAN.
-Love playing video games like Souls series, but recently imersed with the world of Disco Elysium.🤔
-Feel free to contact me if u have any funny ideas of... Everything!👯
+Love playing video games like Souls series, but recently imersed with the world of Disco Elysium.🤔 (and Kaggle lol)
+Feel free to contact me if u have any funny ideas of... Anything!👯
+
 
 <div align="center">
   <img src="https://readme-stats.clckblog.space/api?username=rickywesker&count_private=true&show_icons=true&theme=buefy" alt="stats_rickywesker">
