@@ -5,7 +5,7 @@ Feel free to contact me if u have any funny ideas of... Anything!👯
 
 
 <div align="center">
-  <img src="https://readme-stats.clckblog.space/api?username=rickywesker&count_private=true&show_icons=true&theme=buefy" alt="stats_rickywesker">
+  <img src="https://github-readme-stats-one-bice.vercel.app/api?username=rickywesker&show_icons=true&include_all_commits=true&count_private=true&role=OWNER,ORGANIZATION_MEMBER,COLLABORATOR&theme=synthwave" alt="stats_rickywesker">
   <img src="https://media3.giphy.com/media/aNqEFrYVnsS52/giphy.gif?cid=ecf05e472b4zzql11w580uqtrecx5ryth5pmdhhd24ge2l4y&rid=giphy.gif&ct=g" alt="stats_rickywesker">
 </div>
 
