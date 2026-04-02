@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 100" fill="none">
+  <rect width="840" height="100" fill="#E8E6DC"/>
+
+  <!-- organic wave -->
+  <path d="M0 30 Q70 15 140 28 Q210 41 280 25 Q350 9 420 22 Q490 35 560 20 Q630 5 700 25 Q770 45 840 28 L840 100 L0 100Z" fill="#DDD9CB" opacity="0.5"/>
+
+  <!-- scattered dots -->
+  <circle cx="120" cy="50" r="2" fill="#D97757" opacity="0.2"/>
+  <circle cx="300" cy="40" r="1.5" fill="#8B9A6B" opacity="0.25"/>
+  <circle cx="500" cy="55" r="2" fill="#141413" opacity="0.12"/>
+  <circle cx="680" cy="38" r="1.5" fill="#D97757" opacity="0.2"/>
+
+  <!-- small organic marks -->
+  <path d="M400 65 Q410 55 420 65" stroke="#D97757" stroke-width="0.8" opacity="0.2" fill="none"/>
+  <path d="M430 60 Q438 52 446 60" stroke="#8B9A6B" stroke-width="0.8" opacity="0.15" fill="none"/>
+</svg>

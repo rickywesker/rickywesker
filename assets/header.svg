@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 280" fill="none">
+  <rect width="840" height="280" fill="#E8E6DC"/>
+
+  <!-- hand-drawn organic background shapes -->
+  <path d="M0 260 Q60 240 120 255 Q180 270 240 250 Q300 230 360 248 Q420 266 480 245 Q540 224 600 242 Q660 260 720 240 Q780 220 840 238 L840 280 L0 280Z" fill="#DDD9CB" opacity="0.5"/>
+
+  <!-- abstract nodes and connections — organic network motif -->
+  <!-- main constellation -->
+  <circle cx="580" cy="90" r="18" fill="#D97757" opacity="0.15"/>
+  <circle cx="580" cy="90" r="6" fill="#D97757" opacity="0.7"/>
+
+  <circle cx="650" cy="55" r="12" fill="#141413" opacity="0.08"/>
+  <circle cx="650" cy="55" r="4" fill="#141413" opacity="0.5"/>
+
+  <circle cx="720" cy="100" r="22" fill="#8B9A6B" opacity="0.12"/>
+  <circle cx="720" cy="100" r="5" fill="#8B9A6B" opacity="0.6"/>
+
+  <circle cx="680" cy="140" r="10" fill="#D97757" opacity="0.1"/>
+  <circle cx="680" cy="140" r="3.5" fill="#D97757" opacity="0.55"/>
+
+  <circle cx="760" cy="160" r="14" fill="#141413" opacity="0.06"/>
+  <circle cx="760" cy="160" r="4" fill="#141413" opacity="0.4"/>
+
+  <circle cx="610" cy="160" r="8" fill="#8B9A6B" opacity="0.1"/>
+  <circle cx="610" cy="160" r="3" fill="#8B9A6B" opacity="0.5"/>
+
+  <!-- connecting lines — slightly imperfect, hand-drawn feel -->
+  <path d="M582 92 Q610 70 648 57" stroke="#141413" stroke-width="1" opacity="0.18" fill="none"/>
+  <path d="M652 58 Q690 75 718 98" stroke="#141413" stroke-width="1" opacity="0.18" fill="none"/>
+  <path d="M584 94 Q630 130 678 138" stroke="#D97757" stroke-width="0.8" opacity="0.2" fill="none"/>
+  <path d="M682 142 Q720 150 758 158" stroke="#141413" stroke-width="0.8" opacity="0.15" fill="none"/>
+  <path d="M614 158 Q645 150 678 142" stroke="#8B9A6B" stroke-width="0.8" opacity="0.2" fill="none"/>
+  <path d="M722 104 Q745 130 758 156" stroke="#8B9A6B" stroke-width="0.8" opacity="0.15" fill="none"/>
+
+  <!-- scattered dots — data points feel -->
+  <circle cx="550" cy="130" r="2" fill="#D97757" opacity="0.3"/>
+  <circle cx="740" cy="65" r="1.5" fill="#141413" opacity="0.25"/>
+  <circle cx="790" cy="120" r="2" fill="#8B9A6B" opacity="0.3"/>
+  <circle cx="560" cy="60" r="1.5" fill="#8B9A6B" opacity="0.25"/>
+  <circle cx="700" cy="180" r="2" fill="#D97757" opacity="0.2"/>
+  <circle cx="630" cy="190" r="1.5" fill="#141413" opacity="0.2"/>
+  <circle cx="770" cy="80" r="1.5" fill="#D97757" opacity="0.2"/>
+
+  <!-- upper left organic blob — abstract leaf/petal -->
+  <path d="M60 40 Q80 15 120 30 Q105 60 70 55 Q55 52 60 40Z" fill="#8B9A6B" opacity="0.1"/>
+  <path d="M90 60 Q110 40 140 50 Q130 75 100 72 Q85 70 90 60Z" fill="#D97757" opacity="0.08"/>
+
+  <!-- small decorative marks -->
+  <path d="M160 45 Q165 35 170 45" stroke="#141413" stroke-width="1" opacity="0.15" fill="none"/>
+  <path d="M180 38 Q185 28 190 38" stroke="#D97757" stroke-width="0.8" opacity="0.12" fill="none"/>
+
+  <!-- bottom organic shapes -->
+  <path d="M300 220 Q330 200 360 215 Q345 240 310 235Z" fill="#D97757" opacity="0.06"/>
+  <path d="M440 230 Q460 210 490 220 Q480 245 450 240Z" fill="#8B9A6B" opacity="0.06"/>
+
+  <!-- main text — clean, modern -->
+  <text x="65" y="128" font-family="Georgia, 'Times New Roman', serif" font-size="48" font-weight="400" fill="#141413" letter-spacing="-1">Ricky</text>
+  <text x="67" y="165" font-family="'Helvetica Neue', Arial, sans-serif" font-size="15" fill="#30302E" opacity="0.65" letter-spacing="3.5">MATHEMATICIAN · BUILDER</text>
+
+  <!-- thin underline — hand-drawn style -->
+  <path d="M67 175 Q120 173 200 176 Q260 178 310 174" stroke="#D97757" stroke-width="1.2" opacity="0.4" fill="none"/>
+
+  <!-- location tag -->
+  <text x="67" y="210" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#30302E" opacity="0.4" letter-spacing="1">HONG KONG</text>
+</svg>
