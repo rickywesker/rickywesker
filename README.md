@@ -1,58 +1,73 @@
 <div align="center">
 
-<img src="./assets/header.svg" width="100%" alt="Ricky — Mathematician · Builder" />
+<img src="./assets/header.svg" width="100%" alt="RICKY — MATH × CODE" />
 
 </div>
 
 &nbsp;
 
-PhD in Mathematics at HKUST, previously Data Science at Peking University.
-I study generative models and build tools that make learning more human.
-Founder of [EECS-SupportingGroup](https://github.com/EECS-SupportingGroup).
-
-I also keep a ball python named Beatrix and play too many Souls games.
+```
+ ╔══════════════════════════════════════════════════════╗
+ ║  > STATUS                                           ║
+ ║                                                     ║
+ ║    PhD Mathematics @ HKUST                          ║
+ ║    Data Science @ Peking University                 ║
+ ║    Founder @ EECS-SupportingGroup                   ║
+ ║    Location: Hong Kong                              ║
+ ║                                                     ║
+ ║  > INTERESTS                                        ║
+ ║                                                     ║
+ ║    Generative Models · GANs · Computer Vision       ║
+ ║    Full-stack Web · AI tooling                      ║
+ ║    Souls-like Games · Kaggle · Snake Keeping        ║
+ ╚══════════════════════════════════════════════════════╝
+```
 
 &nbsp;
 
 <div align="center">
-<img src="./assets/divider.svg" width="50%" />
+<img src="./assets/divider.svg" width="45%" />
 </div>
 
 &nbsp;
 
-### Currently building
+### ⚔️ Quest Log
 
-**[Alteris](https://alteris.hk)** — An AI competency platform for classrooms in Hong Kong. Students learn through project-based lessons with live AI sandboxes; teachers manage coursework and issue certifications. Built with Next.js, Hono, PostgreSQL, and LLM streaming.
+**[Beatrix Cam](https://github.com/rickywesker/beatrix-cam)** — Night-vision live stream for my ball python. Raspberry Pi Zero 2W + 940nm IR. She has no idea.
 
-**[Beatrix Cam](https://github.com/rickywesker/beatrix-cam)** — Night-vision live streaming for my pet snake. Raspberry Pi Zero 2W, Camera Module 3, 940nm infrared. She doesn't know she's on camera.
-
-&nbsp;
-
-### Things I work with
-
-Python · TypeScript · C++ · PyTorch · React · Next.js · PostgreSQL · Drizzle · Docker · Tailwind
-
-&nbsp;
-
-### Previous work
-
-**[Markov UST](https://github.com/rickywesker/markovust)** — Interactive visualization platform for stochastic processes, built for MATH 3425.
+**[Markov UST](https://github.com/rickywesker/markovust)** — Interactive visualization for stochastic processes. Built for MATH 3425.
 
 **[Grokking Leetcode](https://github.com/rickywesker/grokkingLeetcode)** — Pattern-based problem solving, organized by topic.
 
-**[Deep Nets in PyTorch](https://github.com/rickywesker/implementNetinPytorch)** — Implementing architectures from papers as a learning exercise.
+**[Deep Nets in PyTorch](https://github.com/rickywesker/implementNetinPytorch)** — Implementing architectures from papers, one forward pass at a time.
 
 &nbsp;
 
 <div align="center">
-<img src="./assets/divider.svg" width="50%" />
+<img src="./assets/divider.svg" width="45%" />
+</div>
+
+&nbsp;
+
+### 🎒 Inventory
+
+```
+ LANGUAGES    Python · TypeScript · C++ · JavaScript
+ ML/AI        PyTorch · OpenAI · Anthropic · Jupyter
+ WEB          React · Next.js · Tailwind · PostgreSQL · Docker
+```
+
+&nbsp;
+
+<div align="center">
+<img src="./assets/divider.svg" width="45%" />
 </div>
 
 &nbsp;
 
 <div align="center">
 
-<img src="https://github-readme-stats-one-bice.vercel.app/api?username=rickywesker&show_icons=true&include_all_commits=true&count_private=true&role=OWNER,ORGANIZATION_MEMBER,COLLABORATOR&theme=default&hide_border=true&bg_color=E8E6DC&title_color=141413&icon_color=D97757&text_color=30302E&ring_color=D97757" height="170" alt="stats" />
+<img src="https://github-readme-stats-one-bice.vercel.app/api?username=rickywesker&show_icons=true&include_all_commits=true&count_private=true&role=OWNER,ORGANIZATION_MEMBER,COLLABORATOR&theme=midnight-purple&hide_border=true&bg_color=1a1a2e&title_color=e94560&icon_color=ffd700&text_color=e0e0e0&ring_color=e94560" height="170" alt="stats" />
 
 </div>
 
@@ -61,6 +76,8 @@ Python · TypeScript · C++ · PyTorch · React · Next.js · PostgreSQL · Driz
 <div align="center">
 
 *"Hesitation is defeat."*
+
+&nbsp;
 
 [noparick.org](https://noparick.org)
 

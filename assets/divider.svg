@@ -1,8 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 20" fill="none">
-  <path d="M0 10 Q30 6 60 10 Q90 14 120 10 Q150 6 180 10 Q210 14 240 10 Q270 7 300 10 Q330 13 360 10 Q390 7 420 10 Q450 13 480 10 Q510 7 540 10 Q570 13 600 10" stroke="#D97757" stroke-width="0.8" opacity="0.3" fill="none"/>
-  <!-- scattered dots along the line -->
-  <circle cx="90" cy="10" r="1.5" fill="#D97757" opacity="0.25"/>
-  <circle cx="240" cy="10" r="1.2" fill="#8B9A6B" opacity="0.3"/>
-  <circle cx="420" cy="10" r="1.5" fill="#D97757" opacity="0.2"/>
-  <circle cx="540" cy="10" r="1.2" fill="#141413" opacity="0.15"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 16" shape-rendering="crispEdges">
+  <!-- pixel dotted line -->
+  <rect x="60" y="6" width="8" height="4" fill="#533483" opacity="0.6"/>
+  <rect x="80" y="6" width="8" height="4" fill="#e94560" opacity="0.4"/>
+  <rect x="100" y="6" width="8" height="4" fill="#533483" opacity="0.6"/>
+  <rect x="120" y="6" width="4" height="4" fill="#ffd700" opacity="0.5"/>
+  <rect x="140" y="6" width="8" height="4" fill="#533483" opacity="0.6"/>
+  <rect x="160" y="6" width="8" height="4" fill="#e94560" opacity="0.4"/>
+  <rect x="180" y="6" width="8" height="4" fill="#533483" opacity="0.6"/>
+
+  <rect x="240" y="4" width="4" height="4" fill="#e94560" opacity="0.5"/>
+  <rect x="244" y="4" width="4" height="4" fill="#ffd700" opacity="0.6"/>
+  <rect x="248" y="4" width="4" height="4" fill="#e94560" opacity="0.5"/>
+  <rect x="240" y="8" width="4" height="4" fill="#ffd700" opacity="0.6"/>
+  <rect x="244" y="8" width="4" height="4" fill="#e94560" opacity="0.5"/>
+  <rect x="248" y="8" width="4" height="4" fill="#ffd700" opacity="0.6"/>
+
+  <rect x="310" y="6" width="8" height="4" fill="#533483" opacity="0.6"/>
+  <rect x="330" y="6" width="8" height="4" fill="#e94560" opacity="0.4"/>
+  <rect x="350" y="6" width="8" height="4" fill="#533483" opacity="0.6"/>
+  <rect x="370" y="6" width="4" height="4" fill="#ffd700" opacity="0.5"/>
+  <rect x="390" y="6" width="8" height="4" fill="#533483" opacity="0.6"/>
+  <rect x="410" y="6" width="8" height="4" fill="#e94560" opacity="0.4"/>
+  <rect x="430" y="6" width="8" height="4" fill="#533483" opacity="0.6"/>
 </svg>
