@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 92" width="44" height="50.6">
+  <!-- Owl sigil: continuous line front facing owl, Curtain Red body, Lamp Gold eye glints -->
+  <g transform="translate(0,3)">
+  <g fill="none" stroke="#7B1E26" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Continuous outer silhouette: ear tufts, head, rounded body, base -->
+    <path d="M40 13
+             C 34 4, 25 6, 26 15
+             C 17 19, 14 31, 17 43
+             C 18 59, 23 77, 40 83
+             C 57 77, 62 59, 63 43
+             C 66 31, 63 19, 54 15
+             C 55 6, 46 4, 40 13 Z"/>
+    <!-- Facial disc: gentle twin brow arches meeting in a soft beak ridge -->
+    <path d="M21 30 C 26 26, 33 27, 36 33 L 40 38 L 44 33 C 47 27, 54 26, 59 30"/>
+    <!-- Two large eye rings -->
+    <circle cx="30" cy="46" r="9"/>
+    <circle cx="50" cy="46" r="9"/>
+    <!-- Small triangular beak -->
+    <path d="M40 52 L 36 59 L 44 59 Z" fill="#C8A24B" stroke="#7B1E26" stroke-width="2.5"/>
+  </g>
+  <!-- Warm gold pupils: the watching glint -->
+  <circle cx="30" cy="46" r="3.2" fill="#C8A24B"/>
+  <circle cx="50" cy="46" r="3.2" fill="#C8A24B"/>
+  </g>
+</svg>

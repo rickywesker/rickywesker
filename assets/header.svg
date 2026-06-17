@@ -1,169 +1,159 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 320" shape-rendering="crispEdges">
-  <rect width="840" height="320" fill="#1a1a2e"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360" font-family="ui-monospace, 'SF Mono', Menlo, monospace">
+  <defs>
+    <!-- velvet pleat: dark crease -> lit ridge -> dark crease -->
+    <linearGradient id="pleat" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#350C12"/>
+      <stop offset="0.5" stop-color="#A8323B"/>
+      <stop offset="1" stop-color="#350C12"/>
+    </linearGradient>
+    <pattern id="velvet" width="80" height="360" patternUnits="userSpaceOnUse">
+      <rect width="80" height="360" fill="url(#pleat)"/>
+      <rect x="0" width="2" height="360" fill="#220609"/>
+    </pattern>
+    <!-- drifting light source across the fabric -->
+    <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#C8505A" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#D66A72" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#C8505A" stop-opacity="0"/>
+    </linearGradient>
+    <!-- vertical depth shadow (top + bottom darken) -->
+    <linearGradient id="depth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0B0A09" stop-opacity="0.85"/>
+      <stop offset="0.28" stop-color="#0B0A09" stop-opacity="0"/>
+      <stop offset="0.72" stop-color="#0B0A09" stop-opacity="0"/>
+      <stop offset="1" stop-color="#0B0A09" stop-opacity="0.95"/>
+    </linearGradient>
+    <!-- lamp glow behind wordmark -->
+    <radialGradient id="lamp" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#C8A24B" stop-opacity="0.45"/>
+      <stop offset="0.45" stop-color="#7B1E26" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#7B1E26" stop-opacity="0"/>
+    </radialGradient>
+    <!-- edge vignette -->
+    <radialGradient id="vign" cx="0.5" cy="0.45" r="0.75">
+      <stop offset="0.55" stop-color="#0B0A09" stop-opacity="0"/>
+      <stop offset="1" stop-color="#0B0A09" stop-opacity="0.7"/>
+    </radialGradient>
+    <!-- moving film grain -->
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" seed="4" stitchTiles="stitch" result="n">
+        <animate attributeName="seed" values="2;6;9;4;7;2" dur="0.75s" repeatCount="indefinite"/>
+      </feTurbulence>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.92  0 0 0 0 0.88  0 0 0 0 0.82  0 0 0 0.6 0"/>
+    </filter>
+  </defs>
 
-  <!-- stars -->
-  <rect x="80" y="30" width="4" height="4" fill="#e0e0e0" opacity="0.8"/>
-  <rect x="200" y="55" width="3" height="3" fill="#e0e0e0" opacity="0.5"/>
-  <rect x="350" y="20" width="4" height="4" fill="#e0e0e0" opacity="0.7"/>
-  <rect x="500" y="45" width="3" height="3" fill="#e0e0e0" opacity="0.6"/>
-  <rect x="650" y="25" width="4" height="4" fill="#e0e0e0" opacity="0.8"/>
-  <rect x="750" y="60" width="3" height="3" fill="#e0e0e0" opacity="0.5"/>
-  <rect x="130" y="70" width="3" height="3" fill="#e0e0e0" opacity="0.4"/>
-  <rect x="450" y="65" width="3" height="3" fill="#e0e0e0" opacity="0.6"/>
-  <rect x="580" y="15" width="4" height="4" fill="#e0e0e0" opacity="0.7"/>
-  <rect x="300" y="75" width="3" height="3" fill="#e0e0e0" opacity="0.3"/>
+  <!-- 1. void -->
+  <rect width="1200" height="360" fill="#0B0A09"/>
+  <!-- 2. velvet curtain -->
+  <rect width="1200" height="360" fill="url(#velvet)"/>
+  <!-- 3. drifting sheen -->
+  <rect x="-360" y="0" width="360" height="300" fill="url(#sheen)" opacity="0.4">
+    <animateTransform attributeName="transform" type="translate" values="-360,0; 1560,0" dur="11s" repeatCount="indefinite"/>
+  </rect>
+  <!-- 4. depth shadow -->
+  <rect width="1200" height="360" fill="url(#depth)"/>
+  <!-- 5. film grain -->
+  <rect width="1200" height="300" fill="#000000" filter="url(#grain)" opacity="0.5"/>
+  <!-- 6. vignette -->
+  <rect width="1200" height="360" fill="url(#vign)"/>
 
-  <!-- twinkling star (cross shape) -->
-  <rect x="720" y="38" width="4" height="4" fill="#ffd700"/>
-  <rect x="716" y="42" width="4" height="4" fill="#ffd700"/>
-  <rect x="724" y="42" width="4" height="4" fill="#ffd700"/>
-  <rect x="720" y="46" width="4" height="4" fill="#ffd700"/>
+  <!-- 7. owl watermark (top-right stamp) -->
+  <g transform="translate(1066,26)" fill="none" stroke="#3C5249" stroke-width="3" opacity="0.20" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12,42 Q12,8 46,8 Q80,8 80,42 Q80,80 46,84 Q12,80 12,42 Z"/>
+    <path d="M16,16 L26,30"/>
+    <path d="M76,16 L66,30"/>
+    <circle cx="33" cy="40" r="13"/>
+    <circle cx="59" cy="40" r="13"/>
+    <circle cx="33" cy="40" r="3.5" fill="#3C5249" stroke="none"/>
+    <circle cx="59" cy="40" r="3.5" fill="#3C5249" stroke="none"/>
+    <path d="M46,48 L40,58 L52,58 Z" fill="#3C5249" stroke="none"/>
+  </g>
 
-  <!-- moon -->
-  <rect x="740" y="70" width="8" height="8" fill="#ffd700" opacity="0.9"/>
-  <rect x="748" y="70" width="8" height="8" fill="#ffd700" opacity="0.9"/>
-  <rect x="732" y="78" width="8" height="8" fill="#ffd700" opacity="0.9"/>
-  <rect x="740" y="78" width="8" height="8" fill="#ffd700" opacity="0.9"/>
-  <rect x="748" y="78" width="8" height="8" fill="#ffd700" opacity="0.9"/>
-  <rect x="756" y="78" width="8" height="8" fill="#ffd700" opacity="0.9"/>
-  <rect x="732" y="86" width="8" height="8" fill="#ffd700" opacity="0.9"/>
-  <rect x="740" y="86" width="8" height="8" fill="#ffd700" opacity="0.9"/>
-  <rect x="748" y="86" width="8" height="8" fill="#ffd700" opacity="0.9"/>
-  <rect x="740" y="94" width="8" height="8" fill="#ffd700" opacity="0.9"/>
-  <rect x="748" y="94" width="8" height="8" fill="#ffd700" opacity="0.9"/>
-  <!-- moon shadow -->
-  <rect x="748" y="70" width="8" height="8" fill="#1a1a2e"/>
-  <rect x="756" y="78" width="8" height="8" fill="#1a1a2e"/>
-  <rect x="748" y="86" width="8" height="8" fill="#1a1a2e"/>
-  <rect x="748" y="94" width="8" height="8" fill="#1a1a2e"/>
+  <!-- 8. chevron floor (Black Lodge, in perspective at the base) -->
+  <g>
+    <rect x="0" y="300" width="1200" height="60" fill="#0B0A09"/>
+    <!-- back haze line -->
+    <rect x="0" y="306" width="1200" height="2" fill="#3C5249" opacity="0.5"/>
+    <polygon points="0,358 40,314 80,358" fill="#E6DFCF"/>
+    <polygon points="80,358 120,314 160,358" fill="#3C5249"/>
+    <polygon points="160,358 200,314 240,358" fill="#E6DFCF"/>
+    <polygon points="240,358 280,314 320,358" fill="#3C5249"/>
+    <polygon points="320,358 360,314 400,358" fill="#E6DFCF"/>
+    <polygon points="400,358 440,314 480,358" fill="#3C5249"/>
+    <polygon points="480,358 520,314 560,358" fill="#E6DFCF"/>
+    <polygon points="560,358 600,314 640,358" fill="#3C5249"/>
+    <polygon points="640,358 680,314 720,358" fill="#E6DFCF"/>
+    <polygon points="720,358 760,314 800,358" fill="#3C5249"/>
+    <polygon points="800,358 840,314 880,358" fill="#E6DFCF"/>
+    <polygon points="880,358 920,314 960,358" fill="#3C5249"/>
+    <polygon points="960,358 1000,314 1040,358" fill="#E6DFCF"/>
+    <polygon points="1040,358 1080,314 1120,358" fill="#3C5249"/>
+    <polygon points="1120,358 1160,314 1200,358" fill="#E6DFCF"/>
+    <!-- single gold glint on the centre peak -->
+    <polygon points="595,322 600,314 605,322" fill="#C8A24B"/>
+    <rect x="0" y="356" width="1200" height="3" fill="#E6DFCF" opacity="0.55"/>
+  </g>
 
-  <!-- pixel text: RICKY  (each letter ~40px wide, 48px tall, 8px pixel size) -->
-  <!-- R -->
-  <rect x="200" y="110" width="8" height="48" fill="#e94560"/>
-  <rect x="208" y="110" width="8" height="8" fill="#e94560"/>
-  <rect x="216" y="110" width="8" height="8" fill="#e94560"/>
-  <rect x="224" y="118" width="8" height="8" fill="#e94560"/>
-  <rect x="224" y="126" width="8" height="8" fill="#e94560"/>
-  <rect x="208" y="134" width="8" height="8" fill="#e94560"/>
-  <rect x="216" y="134" width="8" height="8" fill="#e94560"/>
-  <rect x="216" y="142" width="8" height="8" fill="#e94560"/>
-  <rect x="224" y="150" width="8" height="8" fill="#e94560"/>
+  <!-- 9-12. RICKY wordmark: gold keyline (steady) under flickering red -->
+  <!-- glow + red flicker share timing; gold keyline holds so letters never vanish -->
+  <g opacity="1">
+    <animate attributeName="opacity" values="1;1;0.5;1;0.85;1;0.4;0.95;1" keyTimes="0;0.42;0.44;0.5;0.6;0.63;0.66;0.69;1" dur="5.5s" repeatCount="indefinite"/>
+    <ellipse cx="600" cy="152" rx="360" ry="120" fill="url(#lamp)"/>
+  </g>
 
-  <!-- I -->
-  <rect x="248" y="110" width="8" height="8" fill="#e94560"/>
-  <rect x="256" y="110" width="8" height="8" fill="#e94560"/>
-  <rect x="264" y="110" width="8" height="8" fill="#e94560"/>
-  <rect x="256" y="118" width="8" height="40" fill="#e94560"/>
-  <rect x="248" y="150" width="8" height="8" fill="#e94560"/>
-  <rect x="264" y="150" width="8" height="8" fill="#e94560"/>
+  <!-- gold keyline (steady, slightly wider) -->
+  <g fill="none" stroke="#C8A24B" stroke-width="27" stroke-linecap="round" stroke-linejoin="round">
+    <!-- R -->
+    <path d="M411,92 L411,214"/>
+    <path d="M411,92 L449,92 Q472,92 472,121 Q472,150 449,150 L411,150"/>
+    <path d="M438,150 L472,214"/>
+    <!-- I -->
+    <path d="M503,92 L503,214"/>
+    <path d="M483,92 L523,92"/>
+    <path d="M483,214 L523,214"/>
+    <!-- C -->
+    <path d="M615,124 Q615,92 580,92 Q545,92 545,153 Q545,214 580,214 Q615,214 615,182"/>
+    <!-- K -->
+    <path d="M645,92 L645,214"/>
+    <path d="M645,153 L705,92"/>
+    <path d="M664,151 L706,214"/>
+    <!-- Y -->
+    <path d="M729,92 L764,150"/>
+    <path d="M799,92 L764,150"/>
+    <path d="M764,150 L764,214"/>
+  </g>
 
-  <!-- C -->
-  <rect x="288" y="118" width="8" height="32" fill="#e94560"/>
-  <rect x="296" y="110" width="8" height="8" fill="#e94560"/>
-  <rect x="304" y="110" width="8" height="8" fill="#e94560"/>
-  <rect x="312" y="118" width="8" height="8" fill="#e94560"/>
-  <rect x="296" y="150" width="8" height="8" fill="#e94560"/>
-  <rect x="304" y="150" width="8" height="8" fill="#e94560"/>
-  <rect x="312" y="142" width="8" height="8" fill="#e94560"/>
+  <!-- red fill strokes (flicker) -->
+  <g fill="none" stroke="#7B1E26" stroke-width="20" stroke-linecap="round" stroke-linejoin="round">
+    <animate attributeName="opacity" values="1;1;0.5;1;0.85;1;0.4;0.95;1" keyTimes="0;0.42;0.44;0.5;0.6;0.63;0.66;0.69;1" dur="5.5s" repeatCount="indefinite"/>
+    <!-- R -->
+    <path d="M411,92 L411,214"/>
+    <path d="M411,92 L449,92 Q472,92 472,121 Q472,150 449,150 L411,150"/>
+    <path d="M438,150 L472,214"/>
+    <!-- I -->
+    <path d="M503,92 L503,214"/>
+    <path d="M483,92 L523,92"/>
+    <path d="M483,214 L523,214"/>
+    <!-- C -->
+    <path d="M615,124 Q615,92 580,92 Q545,92 545,153 Q545,214 580,214 Q615,214 615,182"/>
+    <!-- K -->
+    <path d="M645,92 L645,214"/>
+    <path d="M645,153 L705,92"/>
+    <path d="M664,151 L706,214"/>
+    <!-- Y -->
+    <path d="M729,92 L764,150"/>
+    <path d="M799,92 L764,150"/>
+    <path d="M764,150 L764,214"/>
+  </g>
 
-  <!-- K -->
-  <rect x="336" y="110" width="8" height="48" fill="#e94560"/>
-  <rect x="360" y="110" width="8" height="8" fill="#e94560"/>
-  <rect x="352" y="118" width="8" height="8" fill="#e94560"/>
-  <rect x="344" y="126" width="8" height="16" fill="#e94560"/>
-  <rect x="352" y="142" width="8" height="8" fill="#e94560"/>
-  <rect x="360" y="150" width="8" height="8" fill="#e94560"/>
+  <!-- 13. subline -->
+  <text x="600" y="256" text-anchor="middle" font-size="22" letter-spacing="12" font-weight="bold" fill="#E6DFCF">MATH &#215; CODE</text>
+  <!-- 14. the signature, faint -->
+  <text x="600" y="284" text-anchor="middle" font-size="12.5" letter-spacing="3.5" font-style="italic" fill="#8A8579">the owls are not what they seem</text>
 
-  <!-- Y -->
-  <rect x="384" y="110" width="8" height="8" fill="#e94560"/>
-  <rect x="416" y="110" width="8" height="8" fill="#e94560"/>
-  <rect x="392" y="118" width="8" height="8" fill="#e94560"/>
-  <rect x="408" y="118" width="8" height="8" fill="#e94560"/>
-  <rect x="400" y="126" width="8" height="8" fill="#e94560"/>
-  <rect x="400" y="134" width="8" height="24" fill="#e94560"/>
-
-  <!-- subtitle: pixel text "MATH x CODE" in smaller 4px pixels -->
-  <text x="260" y="185" font-family="'Courier New', monospace" font-size="14" fill="#0f3460" letter-spacing="6" font-weight="bold">MATH × CODE</text>
-
-  <!-- ground / grass -->
-  <rect x="0" y="260" width="840" height="60" fill="#16213e"/>
-  <rect x="0" y="256" width="840" height="8" fill="#533483"/>
-  <!-- grass tufts -->
-  <rect x="40" y="248" width="8" height="8" fill="#533483"/>
-  <rect x="120" y="248" width="8" height="8" fill="#533483"/>
-  <rect x="250" y="248" width="8" height="8" fill="#533483"/>
-  <rect x="400" y="248" width="8" height="8" fill="#533483"/>
-  <rect x="550" y="248" width="8" height="8" fill="#533483"/>
-  <rect x="700" y="248" width="8" height="8" fill="#533483"/>
-  <rect x="780" y="248" width="8" height="8" fill="#533483"/>
-
-  <!-- pixel snake (Beatrix!) crawling on ground -->
-  <!-- body -->
-  <rect x="80" y="240" width="8" height="8" fill="#2ecc71"/>
-  <rect x="88" y="240" width="8" height="8" fill="#27ae60"/>
-  <rect x="96" y="232" width="8" height="8" fill="#2ecc71"/>
-  <rect x="104" y="232" width="8" height="8" fill="#27ae60"/>
-  <rect x="112" y="240" width="8" height="8" fill="#2ecc71"/>
-  <rect x="120" y="240" width="8" height="8" fill="#27ae60"/>
-  <rect x="128" y="240" width="8" height="8" fill="#2ecc71"/>
-  <rect x="136" y="232" width="8" height="8" fill="#27ae60"/>
-  <rect x="144" y="232" width="8" height="8" fill="#2ecc71"/>
-  <rect x="152" y="240" width="8" height="8" fill="#27ae60"/>
-  <!-- head -->
-  <rect x="160" y="240" width="8" height="8" fill="#2ecc71"/>
-  <rect x="168" y="236" width="8" height="8" fill="#2ecc71"/>
-  <!-- eye -->
-  <rect x="170" y="236" width="3" height="3" fill="#e94560"/>
-  <!-- tongue -->
-  <rect x="176" y="238" width="6" height="2" fill="#e94560"/>
-  <rect x="182" y="236" width="2" height="2" fill="#e94560"/>
-  <rect x="182" y="240" width="2" height="2" fill="#e94560"/>
-
-  <!-- pixel character (player) standing on ground -->
-  <!-- head -->
-  <rect x="618" y="212" width="8" height="8" fill="#ffd700"/>
-  <rect x="626" y="212" width="8" height="8" fill="#ffd700"/>
-  <rect x="614" y="220" width="8" height="8" fill="#ffd700"/>
-  <rect x="622" y="220" width="8" height="8" fill="#ffd700"/>
-  <rect x="630" y="220" width="8" height="8" fill="#ffd700"/>
-  <!-- eyes -->
-  <rect x="617" y="222" width="3" height="3" fill="#1a1a2e"/>
-  <rect x="629" y="222" width="3" height="3" fill="#1a1a2e"/>
-  <!-- body -->
-  <rect x="614" y="228" width="8" height="8" fill="#e94560"/>
-  <rect x="622" y="228" width="8" height="8" fill="#e94560"/>
-  <rect x="630" y="228" width="8" height="8" fill="#e94560"/>
-  <rect x="610" y="236" width="8" height="8" fill="#e94560"/>
-  <rect x="634" y="236" width="8" height="8" fill="#e94560"/>
-  <!-- legs -->
-  <rect x="614" y="244" width="8" height="8" fill="#0f3460"/>
-  <rect x="630" y="244" width="8" height="8" fill="#0f3460"/>
-
-  <!-- floating coins -->
-  <rect x="500" y="200" width="8" height="8" fill="#ffd700"/>
-  <rect x="520" y="192" width="8" height="8" fill="#ffd700"/>
-  <rect x="540" y="200" width="8" height="8" fill="#ffd700"/>
-
-  <!-- pixel heart -->
-  <rect x="440" y="210" width="8" height="8" fill="#e94560"/>
-  <rect x="456" y="210" width="8" height="8" fill="#e94560"/>
-  <rect x="432" y="218" width="8" height="8" fill="#e94560"/>
-  <rect x="440" y="218" width="8" height="8" fill="#e94560"/>
-  <rect x="448" y="218" width="8" height="8" fill="#e94560"/>
-  <rect x="456" y="218" width="8" height="8" fill="#e94560"/>
-  <rect x="464" y="218" width="8" height="8" fill="#e94560"/>
-  <rect x="440" y="226" width="8" height="8" fill="#e94560"/>
-  <rect x="448" y="226" width="8" height="8" fill="#e94560"/>
-  <rect x="456" y="226" width="8" height="8" fill="#e94560"/>
-  <rect x="448" y="234" width="8" height="8" fill="#e94560"/>
-
-  <!-- HP bar -->
-  <rect x="30" y="18" width="100" height="4" fill="#16213e"/>
-  <rect x="30" y="18" width="72" height="4" fill="#e94560"/>
-  <text x="30" y="14" font-family="'Courier New', monospace" font-size="9" fill="#e0e0e0" opacity="0.7">HP</text>
-
-  <!-- EXP bar -->
-  <rect x="30" y="30" width="100" height="4" fill="#16213e"/>
-  <rect x="30" y="30" width="55" height="4" fill="#ffd700"/>
-  <text x="30" y="42" font-family="'Courier New', monospace" font-size="9" fill="#e0e0e0" opacity="0.7">EXP</text>
+  <!-- 15. surveillance scanline, slow pass over everything -->
+  <rect x="0" y="0" width="1200" height="3" fill="#D66A72" opacity="0.20">
+    <animate attributeName="y" values="0;360" dur="7s" repeatCount="indefinite"/>
+  </rect>
 </svg>
